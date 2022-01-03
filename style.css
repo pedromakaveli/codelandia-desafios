@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;700;800&display=swap");
+
+:root {
+  --dark-color: #181818;
+  --gray-color: #474747;
+  --white-gray: #ebe9ea;
+  --white-color: #f6f6f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  all: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--white-color);
+}
+
+h1 {
+  font-size: 1.625rem;
+  color: var(--title-black);
+}
+
+p {
+  font-size: 1.125rem;
+}
+.header-cupom {
+  padding: 15px 0px;
+  text-align: center;
+  width: 100vw;
+  color: var(--white-color);
+  background-color: var(--dark-color);
+}
+
+.logo {
+  padding: 15px 0px;
+  width: 100vw;
+  background-color: var(--white-gray);
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.container-intro {
+  padding-left: 100px;
+}
+
+.introducao {
+  background-image: linear-gradient(#181818af, #181818d2),
+    url("./img/air-jordan.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 378px;
+  min-width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+
+.titulo-introducao {
+  font-size: 2rem;
+  color: var(--white-gray);
+  margin-bottom: 19px;
+}
+
+.descricao-introducao {
+  color: var(--white-gray);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 35px;
+  max-width: 50ch;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 20px;
+}
+
+@media (max-width: 800px) {
+  .container-intro {
+    padding-left: 30px !important;
+  }
+
+  .produto-principal {
+    margin-top: 20px !important;
+    padding: 3rem;
+  }
+
+  .produtos {
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 20px;
+  }
+
+  .produto-principal-texto p {
+    text-align: center;
+  }
+}
+
+.produto-principal {
+  margin-top: 58px;
+}
+
+.produto-principal-texto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 59px;
+}
+
+.produto-principal-texto h2 {
+  font-size: 2rem;
+  color: var(--dark-color);
+  line-height: 62.78px;
+}
+
+.produto-principal-texto p {
+  font-weight: 500;
+  color: var(--gray-color);
+  max-width: 70ch;
+}
+
+.container {
+  max-width: 1400px;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+}
+
+.item {
+  background: #ebe9ea;
+  padding: 75px 25px;
+  border-radius: 4px;
+}
+
+.item img:hover {
+  transform: scale(120%);
+  transition: 1s;
+}
+
+.rodape {
+  max-width: 100vw;
+  background: var(--dark-color);
+  color: var(--white-gray);
+  text-align: center;
+
+  padding: 12px 0px;
+}
